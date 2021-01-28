@@ -2,6 +2,8 @@
 
 Solve the following problems.
 
+See https://asu-compmethodsphysics-phy494.github.io/ASU-PHY494/2021/01/28/04_Python_1/ for help.
+
 ## Temperature conversion
 
 Create a program `tempconverter.py` that asks the user to input a
