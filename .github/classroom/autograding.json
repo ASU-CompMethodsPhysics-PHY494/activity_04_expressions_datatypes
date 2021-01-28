@@ -13,7 +13,7 @@
     {
       "name": "Test: temperature conversion (print)",
       "setup": "",
-      "run": "tempconverter.py",
+      "run": "python tempconverter.py",
       "input": "523.15",
       "output": "482",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "Test: print(stuff)",
       "setup": "",
-      "run": "slices.py",
+      "run": "python slices.py",
       "input": "",
       "output": "['dog', 42, -1.234, 'cat', [3, 2, 1]]",
       "comparison": "included",
