@@ -21,16 +21,6 @@
       "points": 4
     },
     {
-      "name": "Test: print(stuff)",
-      "setup": "",
-      "run": "python slices.py",
-      "input": "",
-      "output": "['dog', 42, -1.234, 'cat', [3, 2, 1]]",
-      "comparison": "included",
-      "timeout": 1,
-      "points": 1
-    },	
-    {
       "name": "Test: list construction: stuff",
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest --tb=line tests/test_stuff.py",
