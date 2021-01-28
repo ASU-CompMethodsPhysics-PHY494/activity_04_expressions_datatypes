@@ -1,4 +1,6 @@
 # Activity 04: Expressions and Datatypes
+![GitHub Classroom Workflow](../../workflows/GitHub%20Classroom%20Workflow/badge.svg?branch=main) ![Points badge](../../blob/badges/.github/badges/points.svg)
+
 
 Solve the following problems.
 
