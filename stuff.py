@@ -12,7 +12,7 @@ stuff = []
 
 
 # Second part
-other_stuf = stuff[:]    # 1. copy list
+other_stuff = stuff[:]    # 1. copy list
 
 # 2. replace elements 1 and 2 with the list `['python', 'swallow']`
 # 3. remove the last element and extend with the list `['Hund', 'Python', 'Schwalbe', 'Katze']`
