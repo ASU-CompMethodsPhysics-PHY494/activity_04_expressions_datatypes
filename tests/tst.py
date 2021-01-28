@@ -15,21 +15,21 @@ def _test_variable(name, reference, mod):
     try:
         module = importlib.import_module(mod.stem)
     except ImportError:
-        raise AssertionError(f"Solution file '{mod}' could not be imported")
+        raise AssertionError(f"File '{mod}' could not be imported.")
     try:
         value = getattr(module, name)
     except AttributeError:
-        raise AssertionError(f"Solution file '{mod}' does not contain variable '{name}'.")
+        raise AssertionError(f"File '{mod}' does not contain variable '{name}'.")
 
     try:
-        assert value == pytest.approx(reference), f"{name}={value} is not correct"
+        assert value == pytest.approx(reference), f"{name}={value} is not correct, should have been '{reference}'."
     except TypeError:
-        assert value == reference, f"{name}={value} is not correct"
+        assert value == reference, f"{name}={value} is not correct, should have been '{reference}'."
 
 def _test_variable_with_input(name, input_values, reference, mod):
     mod = pathlib.Path(mod)
     if not mod.exists():
-        raise AssertionError(f"Solution file '{mod}' could not be found")
+        raise AssertionError(f"File '{mod}' could not be found")
 
     oldstdin = sys.stdin
     try:
@@ -38,6 +38,8 @@ def _test_variable_with_input(name, input_values, reference, mod):
         # execute the code in __main__ and have variables in GLOBALS
         GLOBALS = {'__name__': '__main__'}
         exec(open(mod).read(), GLOBALS)
+    except Exception as exc:
+        raise AssertionError(f"Running {mod} failed with {exc.__class__.__name__}:\n'{exc}'\nRun locally to debug.")
     finally:
         sys.stdin = oldstdin
 
@@ -46,6 +48,6 @@ def _test_variable_with_input(name, input_values, reference, mod):
     except KeyError:
         raise AssertionError(f"Solution file '{mod}' does not contain variable '{name}'.")
 
-    assert value == pytest.approx(reference), f"{name}={value} is not correct"
+    assert value == pytest.approx(reference), f"{name}={value} is not correct, should have been '{reference}'."
 
 
