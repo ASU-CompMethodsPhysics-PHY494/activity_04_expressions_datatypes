@@ -14,8 +14,8 @@
       "name": "Test: temperature conversion (print)",
       "setup": "",
       "run": "python tempconverter.py",
-      "input": "523.15",
-      "output": "482",
+      "input": "441.5",
+      "output": "500.65",
       "comparison": "included",
       "timeout": 1,
       "points": 2
