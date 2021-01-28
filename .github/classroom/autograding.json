@@ -3,7 +3,7 @@
     {
       "name": "Test: files present",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_files.py",
+      "run": "pytest --tb=line tests/test_files.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "Test: multiple temperature conversions",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_temperature_converter.py",
+      "run": "pytest --tb=line tests/test_temperature_converter.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "Test: list construction: stuff",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_stuff.py",
+      "run": "pytest --tb=line tests/test_stuff.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "Test: list construction: other_stuff",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_other_stuff.py",
+      "run": "pytest --tb=line tests/test_other_stuff.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "Test: list slicing a",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_a.py",
+      "run": "pytest --tb=line tests/test_a.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -73,7 +73,7 @@
     {
       "name": "Test: list slicing b",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_b.py",
+      "run": "pytest --tb=line tests/test_b.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -83,7 +83,7 @@
     {
       "name": "Test: list slicing c",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_c.py",
+      "run": "pytest --tb=line tests/test_c.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -93,7 +93,7 @@
      {
       "name": "Test: list slicing d",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_d.py",
+      "run": "pytest --tb=line tests/test_d.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -103,7 +103,7 @@
      {
       "name": "Test: list slicing e",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_e.py",
+      "run": "pytest --tb=line tests/test_e.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -113,7 +113,7 @@
      {
       "name": "Test: list slicing f",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_f.py",
+      "run": "pytest --tb=line tests/test_f.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -123,7 +123,7 @@
      {
       "name": "Test: list slicing g",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_g.py",
+      "run": "pytest --tb=line tests/test_g.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -133,7 +133,7 @@
      {
       "name": "Test: list slicing g",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest tests/test_g.py",
+      "run": "pytest --tb=line tests/test_g.py",
       "input": "",
       "output": "",
       "comparison": "included",
