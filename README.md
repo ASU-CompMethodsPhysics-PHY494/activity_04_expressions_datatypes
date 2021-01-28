@@ -9,11 +9,11 @@ See https://asu-compmethodsphysics-phy494.github.io/ASU-PHY494/2021/01/28/04_Pyt
 ## Temperature conversion
 
 Create a program `tempconverter.py` that asks the user to input a
-temperature in degree Fahrenheit (theta) and prints the temperature in
+temperature in degree Fahrenheit (θ) and prints the temperature in
 Kelvin (T), according to the equation
 
           5
-      T = - (theta - 32) + 273.15
+      T = - (θ - 32) + 273.15
           9
 
 Your program should assign the temperature in Kelvin to a variable `T`.
@@ -21,7 +21,7 @@ Your program should assign the temperature in Kelvin to a variable `T`.
 
 ## List indexing and slicing
 
-Give the lists
+Given the lists
 
      letters = ['A', 'B', 'C', 'D', 'E', 'F']
      temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0] 
