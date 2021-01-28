@@ -11,16 +11,6 @@
       "points": 3
     },
     {
-      "name": "Test: temperature conversion (print)",
-      "setup": "",
-      "run": "python tempconverter.py",
-      "input": "441.5",
-      "output": "500.65",
-      "comparison": "included",
-      "timeout": 1,
-      "points": 2
-    },
-    {
       "name": "Test: multiple temperature conversions",
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest --tb=line tests/test_temperature_converter.py",
